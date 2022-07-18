@@ -1,0 +1,11 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("DevHub", "Synapse")
+
+if game.PlaceId == 8821596095 then 
+    local Main = Window:NewTab("Main")
+    local MainSection =  Main:NewSection("Main")
+
+    MainSection:NewButton("Infinite Yield", "FE Admin Commands", function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+    end)
+end
